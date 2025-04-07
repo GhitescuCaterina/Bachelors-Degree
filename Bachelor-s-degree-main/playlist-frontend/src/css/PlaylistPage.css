@@ -1,0 +1,495 @@
+ body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #3C0A0A 0%, #220303 60%);
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.welcome-banner {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: #4b0a0a9a;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  color: #fff;
+  z-index: 999;
+}
+.welcome-banner h2 {
+  margin-top: 0;
+}
+.welcome-banner button {
+  background-color: #5c0303cb;
+  border: none;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+.welcome-banner button:hover {
+  background-color: #7c1515b2;
+}
+
+.playlist-header {
+  display: flex;
+  align-items: center;
+  background-color: #3C0A0A;
+  padding: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.header-left h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.playlist-hero {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 2rem;
+  background: #3b0a0a;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+.playlist-cover {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 2rem;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.hero-meta {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0.2rem 0;
+}
+
+.hero-members {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.follow-btn, .like-btn {
+  background-color: #5c0303cb;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.follow-btn:hover, .like-btn:hover {
+  background-color: #7c1515b2;
+}
+
+.main-content {
+  display: flex;
+  gap: 2rem;
+  margin: 0 5rem 3rem; 
+}
+
+.tracklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 60%; 
+}
+
+.track-item {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 1rem; 
+}
+
+.track-item:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.track-thumbnail img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.track-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.track-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+  color: #fff;
+}
+
+.track-artist {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.note-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #3f0808;
+  color: #fff;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.note-button.chat-btn {
+  right: 2.5rem;
+}
+.note-button:hover {
+  background-color: #601010;
+}
+
+.playlist-feed {
+  flex: 1;
+  background-color: rgba(255,255,255,0.03);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  height: fit-content;
+}
+
+.playlist-feed h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feed-post {
+  display: flex;
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.04);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.feed-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.feed-content {
+  flex: 1;
+}
+
+.feed-userinfo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.feed-time {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.feed-new-post {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.feed-new-post textarea {
+  flex: 1;
+  background-color: #3C0A0A;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  resize: none;
+  height: 60px;
+}
+
+.feed-new-post button {
+  background-color: #5c0303cb;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.feed-new-post button:hover {
+  background-color: #7c1515b2;
+}
+
+.chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5c0303cb;
+  border: none;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 1100;
+}
+.chat-toggle:hover {
+  background-color: #7c1515b2;
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 280px;
+  background-color: #290606cc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  color: #fff;
+  z-index: 1200;
+}
+
+.chat-widget h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.chat-messages {
+  height: 120px;
+  overflow-y: auto;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.chat-message {
+  margin-bottom: 0.4rem;
+}
+.chat-widget input {
+  width: 100%;
+  background-color: #3C0A0A;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup {
+  background-color: #471515cb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  width: 400px;
+  color: #fff;
+  text-align: center;
+}
+.popup h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.popup textarea {
+  width: 100%;
+  height: 140px;
+  background-color: #5a1a1ab9;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 1rem;
+}
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.popup-buttons button {
+  background-color: #5c0303cb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.popup-buttons button:hover {
+  background-color: #7c1515b2;
+}
+
+.view-notes-popup {
+  background-color: #471515de;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  width: 700px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.notes-columns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.notes-column {
+  background-color: #290606;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+}
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.note-item {
+  background-color: #5a1a1a;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.delete-note-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+.delete-note-btn:hover {
+  font-size: 1.12rem;
+}
+.close-btn {
+  background-color: #5c0303cb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+.close-btn:hover {
+  background-color: #7c1515b2;
+}
+
+@media (max-width: 900px) {
+  .playlist-hero {
+    margin: 6rem 1rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .playlist-cover {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .main-content {
+    flex-direction: column;
+    margin: 0 1rem 3rem;
+  }
+  .tracklist, .playlist-feed {
+    width: 100%;
+  }
+  .view-notes-popup {
+    width: 90%;
+    max-width: 600px;
+  }
+  .chat-widget {
+    right: 10px;
+    width: 240px;
+  }
+}

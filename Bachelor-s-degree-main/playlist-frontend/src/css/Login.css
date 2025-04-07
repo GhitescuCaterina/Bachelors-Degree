@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3C0A0A;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 1300px;
+    background: rgb(133, 123, 123, 0.651);
+    border-radius: 20px;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 14px 14px 20px rgba(0, 0, 0, 0.25);
+}
+
+.image-section {
+    width: 45%;
+    background-color: rgba(133, 123, 123, 0.651);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 4rem;
+    margin-left:2rem;
+    box-shadow: 14px 14px 20px rgba(0, 0, 0, 0.25);
+}
+
+.image-section img {
+    width: 130%;
+    max-width: 320px;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.login-content h1 {
+    font-size: 3rem;
+    padding-left: 3rem;
+}
+
+.login-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-top:1rem;
+    padding-left: 3rem;
+}
+
+.login-button {
+    background-color: #AB2121;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 3rem;
+}
+
+.login-button:hover {
+    background-color: #810000;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        max-width: 95%;
+    }
+
+    .image-section {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+}
