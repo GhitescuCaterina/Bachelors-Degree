@@ -2,7 +2,7 @@
 
 A web application designed to enhance music-based social interaction by allowing users to annotate, share, and collaborate on YouTube Music playlists.
 
-## 🛠 Technologies Used
+## Technologies Used
 - **Backend**: Java, Spring Boot, PostgreSQL
 - **Frontend**: React.js, JavaScript, HTML, CSS
 - **Auth & APIs**: Google OAuth 2.0, YouTube Data API, YTMusic API
